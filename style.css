@@ -1,0 +1,525 @@
+	    * {
+	    box-sizing: border-box;
+	}
+	
+	html {
+	    background: url(img/background_1.jpg) no-repeat center center fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+	
+	body {
+	    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	    font-size: 16px;
+	    margin: 0 auto;
+	}
+	
+	#wrapper {
+	    margin: inherit;
+	    max-width: 960px;
+	}
+	
+	#logo {
+	    margin: inherit;
+	    text-align: center;
+	}
+	
+	#menu {
+	    display: table;
+	    list-style: none;
+	    margin-top: 0;
+	    -webkit-padding-start: 0px;
+        -moz-padding-start: 0px;
+	}
+	
+	#menu li {
+	    color: #ffffff;
+	    display: table-cell;
+	    padding: 6px 6px 2px 6px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    vertical-align: middle;
+	    width: 15%;
+	}
+	
+	#menu li:last-child {
+	    width: 18%;
+	    background: rgba(115, 51, 163, 1);
+	}
+	
+	#menu li:first-child {
+	    width: 8%;
+	}
+	
+	#menu a {
+	    color: #fff;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	}
+	
+	#menu .not-selected:hover {
+	    background: rgba(115, 51, 163, 0.6);
+	}
+	
+	.selected {
+	    background: rgba(115, 51, 163, 1);
+	}
+	
+	.not-selected {
+	    background: rgba(115, 51, 163, 0.36);
+	}
+	
+	footer {
+	    background: rgba(115, 51, 163, 0.36);
+	    color: #fff;
+	    font-size: 0.9em;
+	    overflow: hidden;
+	}
+	
+	footer section {
+	    clear: both;
+	    padding: 16px;
+	    text-align: center;
+	}
+	
+	#first-footer-section,
+	#second-footer-section,
+	#third-footer-section {
+	    width: 100%;
+	}
+	
+	.info {
+	    border-top: 1px dotted #fff;
+	    border-bottom: 1px dotted #fff;
+	    padding: 16px;
+	}
+	
+	.contact-number {
+	    font-weight: 600;
+	}
+	
+	footer p {
+	    line-height: 2em;
+	    margin-top: 2px;
+	}
+	
+	.social-media-link {
+	    margin-right: 4px;
+	}
+	
+	.info>div {
+	    padding: 0 20px;
+	}
+	
+	@media only screen and (min-width: 480px) {
+	    footer section {
+	        float: left;
+	        clear: none;
+	    }
+	    #first-footer-section,
+	    #third-footer-section {
+	        width: 25%;
+	    }
+	    #second-footer-section {
+	        width: 50%;
+	    }
+	    .info {
+	        border-left: 1px dotted #fff;
+	        border-right: 1px dotted #fff;
+	        border-top: 0;
+	        border-bottom: 0;
+	        min-height: 100px;
+	        padding: 0;
+	    }
+	}
+
+	/* About Page Styles */
+	
+	.aboutpic {
+	    width: 100%;
+	}
+	
+	article {
+	    text-align: center;
+	    color: white;
+	    background-color: gray;
+	    background: rgba(115, 51, 163, 0.36);
+	    color: #fff;
+	    padding: 10px 40px;
+	    margin: 10px 0;
+	}
+	
+	#linkcupcake a:link,
+	a:visited {
+	    color: white;
+	    text-decoration: none;
+	}
+	
+	#linkcupcake a:hover {
+	    color: rgba(115, 51, 163, 1);
+	    text-decoration: none;
+	}
+	
+	@media only screen and (min-width: 480px) {
+	    footer section {
+	        float: left;
+	        clear: none;
+	    }
+	    #first-footer-section,
+	    #third-footer-section {
+	        width: 25%;
+	    }
+	    #second-footer-section {
+	        width: 50%;
+	    }
+	    .info {
+	        border-left: 1px dotted #fff;
+	        border-right: 1px dotted #fff;
+	        border-top: 0;
+	        border-bottom: 0;
+	        min-height: 100px;
+	        padding: 0;
+	    }
+	}
+	/*    ---------------------- MAIN CONTENT STYLES ----------- */
+
+/*    ---------------------- HOME PAGE STYLES ----------- */
+	
+	#intro {
+	    clear: both;
+	    overflow: hidden;
+	}
+	
+	#welcome {
+	    width: 100%;
+	    text-align: center;
+	    font-size: 0.9em;
+	    line-height: 1.5em;
+	    color: #fff;
+	    background: rgba(115, 51, 163, 0.36);
+	    padding: 20px;
+	    margin: 20px 0;
+	    float: left;
+	}
+	
+	#welcome h2 {
+	    text-transform: uppercase;
+	    font-size: 1.2em;
+	}
+	
+	#products {
+	    color: #fff;
+	    font-weight: bold;
+	    text-decoration: none;
+	}
+	
+	#products:hover {
+	    color: rgba(115, 51, 163, 1);
+	}
+	
+	#full_image img {
+	    width: 100%;
+	    max-height: 306px;
+	    float: left;
+	    height: 100%;
+	}
+	
+	.img_container {
+	    visibility: hidden;
+	    height: 0;
+	}
+	
+	@media only screen and (min-width: 961px) {
+	    #full_image {
+	        display: none;
+	        width: 0;
+	    }
+	    #welcome {
+	        width: 43.2%;
+	        padding: 21px 36px;
+	        float: left;
+	        margin-top: 0;
+	    }
+	    .img_container {
+	        visibility: visible;
+	        width: 100%;
+	    }
+	    .small_img {
+	        float: left;
+	        width: 24.7%;
+	        margin-right: 10px;
+	    }
+	    .big_img {
+	        margin-right: 10px;
+	        width: 30%;
+	        float: left;
+	        max-height: 250px;
+	    }
+	    .big_img img,
+	    .small_img img {
+	        width: 100%;
+	    }
+	    #peanut {
+	        margin-bottom: 8px;
+	    }
+}
+        
+        /*    ---------------------- CUPCAKES PAGE STYLES ----------- */
+        
+	    .cupcakes-content {
+	        clear: both;
+	        height: 357px;
+	        margin: 20px 0;
+	        overflow: hidden;
+	    }
+	    .details-container-1 {
+	        background-image: url('img/cherry_cupcake.jpg');
+	    }
+	    .details-container-2 {
+	        background-image: url('img/salted-caramel-cupcake.jpg');
+	    }
+	    .details-container-3 {
+	        background-image: url('img/chocolate-strawberry-cupcake.jpg');
+	    }
+	    .details-container-4 {
+	        background-image: url('img/mint-cupcakes.jpg');
+	    }
+	    .details-container-5 {
+	        background-image: url('img/blueberry-cupcakes.jpg');
+	    }
+	    .details-container-6 {
+	        background-image: url('img/chocolate-cupcakes.jpg');
+	    }
+	    .details-container-1,
+	    .details-container-2,
+	    .details-container-3,
+	    .details-container-4,
+	    .details-container-5,
+	    .details-container-6 {
+	        background-size: cover;
+	        background-repeat: no-repeat;
+	        float: left;
+	        margin-right: 20px;
+	        width: 100%;
+	    }
+	    .details {
+	        background: rgba(115, 51, 163, 0);
+	        color: #fff;
+	        padding: 9% 12% 11% 12%;
+	        text-align: center;
+	        transition: background 0.5s ease-out;
+	        visibility: hidden;
+	    }
+	    .details-container-1:hover .details,
+	    .details-container-2:hover .details,
+	    .details-container-3:hover .details,
+	    .details-container-4:hover .details,
+	    .details-container-5:hover .details,
+	    .details-container-6:hover .details {
+	        background: rgba(115, 51, 163, 0.5);
+	        visibility: visible;
+	    }
+	    div.details:hover {
+	        display: block;
+	    }
+	    .details p span,
+	    .price {
+	        font-weight: bold;
+	    }
+	    .detailed-image-container-1,
+	    .detailed-image-container-2,
+	    .detailed-image-container-3,
+	    .detailed-image-container-4,
+	    .detailed-image-container-5,
+	    .detailed-image-container-6 {
+	        visibility: hidden;
+	        width: 0;
+	    }
+	    @media only screen and (min-width: 320px) and (max-width: 480px) {
+	        .details-container-1, .details-container-2, .details-container-3, .details-container-4, .details-container-5, .details-container-6 {
+	            height: 245px;
+	        }
+	        .details {
+	            font-size: 0.8em;
+	            padding: 10% 9% 12% 9%;
+	        }
+	        .details h2 {
+	            font-size: 1.2em;
+	        }
+	        .cupcakes-content {
+	            height: 245px;
+	        }
+	    }
+	    @media only screen and (min-width: 961px) {
+	        .details-container-1, .details-container-2, .details-container-3, .details-container-4, .details-container-5, .details-container-6 {
+	            width: 60%;
+	        }
+	        .detailed-image-container-1,
+	        .detailed-image-container-2,
+	        .detailed-image-container-3,
+	        .detailed-image-container-4,
+	        .detailed-image-container-5,
+	        .detailed-image-container-6 {
+	            background-size: cover;
+	            background-repeat: no-repeat;
+	            float: left;
+	            visibility: visible;
+	            width: 37.7%;
+	        }
+	        .detailed-image-container-1 {
+	            background-image: url('img/black-forest-detail.jpg');
+	        }
+	        .detailed-image-container-2 {
+	            background-image: url('img/salted-caramel-cupcake-detail.jpg');
+	        }
+	        .detailed-image-container-3 {
+	            background-image: url('img/chocolate-strawberry-cupcake-detail.jpg');
+	        }
+	        .detailed-image-container-4 {
+	            background-image: url('img/mint-cupcake-detail.jpg');
+	        }
+	        .detailed-image-container-5 {
+	            background-image: url('img/blueberry-cupcakes-detail.jpg');
+	        }
+	        .detailed-image-container-6 {
+	            background-image: url('img/chocolate-cupcake-detail.jpg');
+	        }
+	        .saying {
+	            background: rgba(115, 51, 163, 0);
+	            color: #fff;
+	            text-align: center;
+	            transition: background 0.5s ease-out;
+	            visibility: hidden;
+	        }
+	        .detailed-image-container-1 .saying {
+	            padding: 38% 12% 43% 12%;
+	        }
+	        .detailed-image-container-4 .saying {
+	            padding: 35% 12% 40% 12%;
+	        }
+	        .detailed-image-container-2 .saying,
+	        .detailed-image-container-3 .saying,
+	        .detailed-image-container-5 .saying,
+	        .detailed-image-container-6 .saying {
+	            padding: 32% 12% 43% 12%;
+	        }
+	        .detailed-image-container-1:hover .saying,
+	        .detailed-image-container-2:hover .saying,
+	        .detailed-image-container-3:hover .saying,
+	        .detailed-image-container-4:hover .saying,
+	        .detailed-image-container-5:hover .saying,
+	        .detailed-image-container-6:hover .saying {
+	            background: rgba(115, 51, 163, 0.5);
+	            visibility: visible;
+	        }
+	        div.saying:hover {
+	            display: block;
+	        }
+	    }
+        
+	    /*    ---------------------- contact page design----------- */
+        
+	    #contact-img {
+	        margin-bottom: 10px;
+	        max-height: 300px;
+	        float: left;
+	    }
+	    #contact-img img {
+	        width: 100%;
+	        height: 100%;
+	    }
+	    #contact_container {
+	        background: rgba(115, 51, 163, 0.36);
+	        margin-bottom: 16px;
+	        padding: 20px 25px;
+	        line-height: 1.6em;
+	        color: #fff;
+	        text-align: center;
+	        clear: both;
+	        overflow: hidden;
+	    }
+	    #contact_text span {
+	        font-weight: bold;
+	    }
+	    #tel {
+	        font-size: 1.4em;
+	    }
+	    input[type=text],
+	    input[type=email],
+	    textarea {
+	        padding: 10px 15px;
+	        margin-bottom: 6px;
+	        font-size: 0.8em;
+	        color: #626262;
+	    }
+	    ::-webkit-input-placeholder {
+	        color: #b998ad;
+	    }
+	    :-moz-placeholder {
+	        color: #b998ad;
+	        opacity: 1;
+	    }
+	    ::-moz-placeholder {
+	        color: #b998ad;
+	        opacity: 1;
+	    }
+	    :-ms-input-placeholder {
+	        color: #b998ad;
+	    }
+	    :placeholder-shown {
+	        color: #b998ad;
+	    }
+	    input[type=text],
+	    input[type=email],
+	    textarea {
+	        width: 60%;
+	    }
+	    input[type=text]:focus,
+	    input[type=email]:focus {
+	        border-color: rgba(115, 51, 163, 1);
+	    }
+	    input[type=submit] {
+	        padding: 8px 25px;
+	        background: #fff;
+	        border: 0 none;
+	        cursor: pointer;
+	        width: 30%;
+	        text-transform: uppercase;
+	        color: rgba(115, 51, 163, 1);
+	        font-weight: bold;
+	        font-size: 0.8em;
+	        margin-bottom: 18px;
+	    }
+	    @media only screen and (min-width: 961px) {
+	        input[type=text], input[type=email], textarea {
+	            width: 100%;
+	            margin-bottom: 5px;
+	            font-size: 0.8em;
+	        }
+	        #input_box {
+	            float: left;
+	            width: 40%;
+	            margin-right: 20px;
+	        }
+	        #textarea {
+	            float: left;
+	            width: 56%;
+	        }
+	        #form_container {
+	            margin: 0 auto;
+	            display: table;
+	        }
+	        #send {
+	            float: right;
+	            width: 26%;
+	            margin-right: 15px;
+	        }
+	        input[type=submit] {
+	            width: 100%;
+	        }
+	        #contact_container {
+	            line-height: 0.8em;
+	        }
+	    }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lexy's cupcakes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li class="not-selected">
+                        <a href="index.html"><img src="img/home.png" alt="home-icon"></a>
+                    </li>
+                    <li class="not-selected"><a href="about.html">About</a></li>
+                    <li class="not-selected"><a href="cupcakes.html">Cupcakes</a></li>
+                    <li class="selected"><a href="#">Contact</a></li>
+                    <li>Orders at: <span class="contact-number">+46 762 222 222</span></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <div id="contact-img"><img src="img/cupcake-contact.jpg" alt="cupcakes">
+            </div>
+            <div id="contact_container">
+                <div id="contact_text">
+                    <p>For regular orders, please give us a call at:</p>
+                    <br>
+                    <p id="tel"><span>+46 762 222 222</span></p>
+                    <br>
+                    <p>from <span>Monday to Friday</span> between <span>10:00 and 17:00</span></p>
+                    <p> and on <span>Saturdays </span>between <span>10:00 and 14:00 </span></p>
+                    <p>For special inquires or suggestions, please fill in the form:</p>
+                    <br>
+                </div>
+
+
+                <form>
+                    <div id="form_container">
+                        <div id="input_box">
+                            <label for="name"></label>
+                            <input type="text" id="name" placeholder="Name" />
+
+
+                            <label for="mail"></label>
+                            <input type="email" id="mail" placeholder="Email" />
+                            <label for="subject"></label>
+                            <input type="text" id="subject" placeholder="Subject" />
+                        </div>
+
+                        <div id="textarea">
+                            <label for="msg"></label>
+                            <textarea rows="7" id="msg" placeholder="Message"></textarea>
+                        </div>
+                        <div id="send">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </main>
+        <footer>
+            <section id="first-footer-section">
+                <div>
+                    <p>Orders at: <span class="contact-number">+46 762 222 222</span></p>
+                </div>
+                <div>
+                    <p>Follow us on:</p>
+                </div>
+                <div>
+                    <a class="social-media-link" href="#"><img src="img/facebook.png" width="32" height="32" alt="facebook"></a>
+                    <a href="#"><img src="img/instagram.png" width="32" height="32" alt="instagram"></a>
+                </div>
+            </section>
+            <section id="second-footer-section">
+                <div class="info">
+                    <div>
+                        <p>For every cupcake we bake for you, we donate1 kr for Räda Barnen Sverige.</p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/rada_barnen.png" alt="rada-barnen"></a>
+                    </div>
+                </div>
+            </section>
+            <section id="third-footer-section">
+                <div>
+                    <p>&copy; Lexy’s Cupcakes, 2016</p>
+                </div>
+                <div>
+                    <p>Lexy’s Cupcakes is authorized by the National Food Authority</p>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
